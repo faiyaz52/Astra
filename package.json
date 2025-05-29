@@ -1,0 +1,39 @@
+{
+  "name": "astra-rs",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && rspack build",
+    "dev": "rspack serve",
+    "preview": "rspack preview"
+  },
+  "dependencies": {
+    "@am92/react-design-system": "^2.9.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.3.12",
+    "@rspack/core": "^1.3.12",
+    "@rspack/plugin-react-refresh": "^1.4.3",
+    "@types/node": "^22.15.24",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "html-rspack-plugin": "^6.1.2",
+    "react-refresh": "^0.17.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
